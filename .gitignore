@@ -1,0 +1,7 @@
+.bsb.lock
+.merlin
+/build/
+/lib/bs/
+/node_modules/
+yarn-error.log
+*.bs.js

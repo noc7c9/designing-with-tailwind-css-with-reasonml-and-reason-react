@@ -1,0 +1,32 @@
+{
+    "name": "designing-with-tailwind-css",
+    "version": "0.1.0",
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "start": "concurrently --names BSB,SRV --kill-others \"bsb -make-world -w -ws 0.0.0.0:9999\" \"webpack-dev-server --host 0.0.0.0 --mode development\"",
+        "build": "rm -rf build/ && bsb -make-world && webpack --mode production"
+    },
+    "dependencies": {
+        "react": "^16.8.1",
+        "react-dom": "^16.8.1",
+        "reason-react": ">=0.7.0",
+        "tailwindcss": "1.4.3"
+    },
+    "devDependencies": {
+        "acorn": "^7.1.1",
+        "autoprefixer": "^9.7.6",
+        "bs-platform": "^7.2.2",
+        "concurrently": "^5.1.0",
+        "copy-webpack-plugin": "^6.0.1",
+        "css-loader": "^3.5.3",
+        "cssnano": "^4.1.10",
+        "html-webpack-plugin": "^4.2.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "postcss-loader": "^3.0.0",
+        "postcss-nested": "^4.2.1",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    }
+}

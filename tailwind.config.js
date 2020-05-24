@@ -1,5 +1,5 @@
 module.exports = {
-    purge: [],
+    purge: { enabled: false },
     theme: {
         extend: {},
     },

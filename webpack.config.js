@@ -49,13 +49,14 @@ module.exports = (env, options) => ({
             template: './src/index.html',
         }),
         new CopyWebpackPlugin({
-            patterns: [{ from: 'public', to: 'public' }],
+            patterns: [{ from: 'public', to: '.' }],
         }),
     ],
     devServer: {
         allowedHosts: (process.env.WEBPACK_DEV_SERVER_ALLOWED_HOSTS || '')
             .split(',')
             .map(host => host.trim()),
+        contentBase: path.join(__dirname, 'public'),
     },
 });
 

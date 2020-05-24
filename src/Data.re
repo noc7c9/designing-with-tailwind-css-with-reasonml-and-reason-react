@@ -1,3 +1,15 @@
+type property = {
+  title: string,
+  beds: int,
+  baths: int,
+  priceInCents: int,
+  formattedPrice: string,
+  reviewCount: int,
+  rating: int,
+  imageUrl: string,
+  imageAlt: string,
+};
+
 type destination = {
   city: string,
   averagePrice: int,
